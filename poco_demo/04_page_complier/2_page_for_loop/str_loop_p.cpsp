@@ -1,0 +1,20 @@
+<%@ page class="StrLoopHandler" %>
+<%!
+    #include <string>
+    #include <vector>
+%>
+
+<%
+    std::vector<std::string> names {"ZhangSan", "Lisi", "WangWu", "ZhaoLiu"};
+%>
+<html>
+<head>
+<title>StrLoopHandler powered by POCO C++ Libraries and PageCompiler</title>
+<meta http-equiv="refresh" content="1">
+</head>
+<body>
+<% for(auto const& name: names) { %>
+<p style="text-align: center; font-size: 48px;"><%= name %></p>
+<% } %>
+</body>
+</html>

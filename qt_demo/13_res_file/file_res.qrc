@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/hello_file">
+        <file>conanfile.txt</file>
+    </qresource>
+</RCC>

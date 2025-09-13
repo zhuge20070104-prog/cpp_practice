@@ -1,0 +1,7 @@
+[requires]
+    zlib/1.2.12
+    libpng/1.5.2
+    opencv/4.5.5
+
+[generators]
+ cmake

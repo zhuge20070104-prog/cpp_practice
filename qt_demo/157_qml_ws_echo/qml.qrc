@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ChatInput.qml</file>
+        <file>ChatView.qml</file>
+        <file>Label.qml</file>
+        <file>ws_client.qml</file>
+    </qresource>
+</RCC>

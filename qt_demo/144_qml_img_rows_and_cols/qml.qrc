@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+    </qresource>
+
+    <qresource prefix="/images">
+        <file>banana.gif</file>
+        <file>background.jpg</file>
+        <file>qt_logo.jpg</file>
+        <file>tom.jpg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,2 @@
+This is a text file.
+The file is used to test zip.

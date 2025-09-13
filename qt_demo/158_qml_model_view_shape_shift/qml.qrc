@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>mercury.jpeg</file>
+        <file>mars.jpeg</file>
+        <file>venus.jpeg</file>
+        <file>jupiter.jpeg</file>
+        <file>earth.jpeg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0">
+<info organisation="telenav" module="PSD" revision="1.0.0-rc.1+23152204" status="release" publication="20210520075356">
+   <description>Built from commit 7aa995ccbf1ad62052ad225b47dcd9ee8f7fd7a2, http://ec2d-jenkinsmaster-02.mypna.com:8080/job/TIPS-New/job/detection/job/release%252Fsprint10/2/</description>
+</info>
+<publications>
+   <artifact name="PSD" ext="zip" type="zip"/>
+</publications>
+<dependencies>
+   <dependency org="telenav" name="Infrastructure" rev="1.0.3+14821b53">
+      <artifact name="Infrastructure" type="zip"/>
+   </dependency>
+   <dependency org="telenav" name="Common" rev="1.0.3+bac6db7e">
+      <artifact name="Common" type="zip"/>
+   </dependency>
+</dependencies>
+</ivy-module>

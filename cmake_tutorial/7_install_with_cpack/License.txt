@@ -1,0 +1,3 @@
+    Notice
+
+    This is the license file of the OLAS application. The app is under GPL license.

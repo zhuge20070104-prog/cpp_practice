@@ -1,0 +1,6 @@
+[requires]
+poco/1.12.4
+nlohmann_json/3.11.2
+
+[generators]
+cmake

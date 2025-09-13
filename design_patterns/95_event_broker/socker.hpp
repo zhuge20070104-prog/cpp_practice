@@ -1,0 +1,66 @@
+#ifndef _FREDIRC_SOCKER_HPP_
+#define _FREDIRC_SOCKER_HPP_
+
+#include <string>
+#include <iostream>
+#include <boost/signals2.hpp>
+
+namespace sig = boost::signals2;
+
+struct EventData {
+    virtual ~EventData() = default;
+    virtual void print() const = 0;
+};
+
+struct PlayerScoredData: EventData {
+    std::string player_name;
+    int goals_scored_so_far;
+
+    PlayerScoredData(std::string const& player_name_, int const goals_scored_so_far_):
+        player_name(player_name_), goals_scored_so_far(goals_scored_so_far_) {}
+
+    void print() const override {
+        std::cout << player_name << " has scored(their " << goals_scored_so_far << " goal)\n";
+    }
+};
+
+// 观察者
+struct Game {
+    sig::signal<void(EventData*)> events;
+};
+
+struct Player {
+    std::string name;
+    int goals_scored{0};
+    Game& game;
+
+    Player(std::string const& name_, Game& game_): name(name_), game(game_) {}
+
+    void score() {
+        ++goals_scored;
+        PlayerScoredData ps{name, goals_scored};
+        // Send event once scored
+        game.events(&ps);
+    }
+};
+
+
+struct Coach {
+    Game& game;
+    explicit Coach(Game& game_): game(game_) {
+        // Celebrate if player has scored < 3 goals
+        game.events.connect([](EventData* e) {
+            PlayerScoredData* ps = dynamic_cast<PlayerScoredData*>(e);
+            if(!ps) {
+                std::cerr << "Get player scored data failed\n";
+                return;
+            }
+            ps->print();
+            if(ps->goals_scored_so_far < 3) {
+                std::cout << "Coach says: well done, " << ps->player_name << "\n";
+            }
+        });
+    }
+};
+
+#endif

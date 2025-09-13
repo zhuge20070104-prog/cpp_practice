@@ -1,0 +1,18 @@
+#include <cstdio>
+#include <ctype.h>
+
+int main(int argc, char* argv[]) {
+    char string[] = "Nifty TEXT! 123\n";
+    char ch;
+    int x = 0;
+    while((ch = string[x]) != '\0') {
+        if(isalpha(ch)) {
+            putchar('_');
+        } else {
+            putchar(ch);
+        }
+        x++;
+    }
+    
+    return 0;
+}

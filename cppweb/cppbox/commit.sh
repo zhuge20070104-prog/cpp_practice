@@ -1,0 +1,1 @@
+docker commit {container_id} hello_base:latest

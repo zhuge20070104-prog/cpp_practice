@@ -1,0 +1,137 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-02-06T12:41:35.976Z",
+    "end": "2024-02-06T12:41:45.159Z",
+    "duration": 9183,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "beaa8a95-1c96-4784-a7a1-39cf541f53a6",
+      "title": "",
+      "fullFile": "/home/fredric/code/cpp_practice/automation/appiums/5_basic_script_2/api/SwipeHorizontal.js",
+      "file": "/api/SwipeHorizontal.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "11441ae6-4103-4918-9cf9-ffe80c80e6e5",
+          "title": "Learning WebdriverIO API",
+          "fullFile": "/home/fredric/code/cpp_practice/automation/appiums/5_basic_script_2/api/SwipeHorizontal.js",
+          "file": "/api/SwipeHorizontal.js",
+          "beforeHooks": [],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Learning WebdriverIO API\"",
+              "fullTitle": "Learning WebdriverIO API \"after all\" hook in \"Learning WebdriverIO API\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "releaseResource(driver)",
+              "err": {},
+              "uuid": "7ae41258-a0c9-4c1a-90db-cfb35d72faa5",
+              "parentUUID": "11441ae6-4103-4918-9cf9-ffe80c80e6e5",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook in \"Learning WebdriverIO API\"",
+              "fullTitle": "Learning WebdriverIO API \"after each\" hook in \"Learning WebdriverIO API\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "releaseEach(this, driver, './screenshot/login.png')",
+              "err": {},
+              "uuid": "5c316d2e-1c21-4da4-9fd9-be1167684bf3",
+              "parentUUID": "11441ae6-4103-4918-9cf9-ffe80c80e6e5",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Swipe Horizontal",
+              "fullTitle": "Learning WebdriverIO API Swipe Horizontal",
+              "timedOut": false,
+              "duration": 9176,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"Swipe horizontal OK\"",
+              "code": "const SWIPE_ICON_HOME_SCREEN = '~Swipe'\nconst SWIPE_HEADER_TEXT= '//android.widget.TextView[@text=\"Swipe horizontal\"]'\nawait $(SWIPE_ICON_HOME_SCREEN).then(async (ele) => await ele.click())\nawait $(SWIPE_HEADER_TEXT).then(async (ele) => await ele.click())\n// swipt from right to left \nconst yanchor_percentage = 70\nconst xstart_percentage = 90\nconst xend_percentage = 10\nlet size = await driver.getWindowSize()\nlet width = size.width\nlet height = size.height\n\nconst yanchor = height * yanchor_percentage / 100\nconst xstart_point = width * xstart_percentage / 100\nconst xend_point = width * xend_percentage / 100\nfor(let swipe_time = 0; swipe_time < 5; ++swipe_time) {\n  await driver.touchPerform([\n    {\n      action: 'press',\n      options: {\n        x: xstart_point,\n        y: yanchor\n      }\n    },\n    {\n      action: 'wait',\n      options: {\n        ms: 1000\n      }\n    },\n    {\n      action: 'moveTo',\n      options: {\n        x: xend_point,\n        y: yanchor\n      }\n    },\n    {\n      action: 'release',\n      options: {}\n    } \n  ])\n  \n  driver.pause(1000)\n}\naddContext(this, 'Swipe horizontal OK')",
+              "err": {},
+              "uuid": "4a218aae-9cc9-4701-b082-10b0c0b50daa",
+              "parentUUID": "11441ae6-4103-4918-9cf9-ffe80c80e6e5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4a218aae-9cc9-4701-b082-10b0c0b50daa"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9176,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.4.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

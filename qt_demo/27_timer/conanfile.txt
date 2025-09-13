@@ -1,0 +1,8 @@
+[requires]
+ opencv/4.5.5
+ poco/1.12.4
+ openssl/1.1.1t
+ zstd/1.5.4
+
+[generators]
+cmake

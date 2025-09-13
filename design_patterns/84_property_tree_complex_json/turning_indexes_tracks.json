@@ -1,0 +1,1306 @@
+{
+    "tracks": [
+        {
+            "tmq_header": {
+                "tmq_stamp": "1700033869059"
+            },
+            "timestamp": "1700033869059170574",
+            "trajectory_type": "kTrajectory",
+            "waypoints": [
+                {
+                    "pose": {
+                        "x": 0.0739831924,
+                        "y": 0.0536341667,
+                        "theta": -0.0146891475
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.373950958,
+                        "y": 0.0492277145,
+                        "theta": -0.0146891475
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.673552513,
+                        "y": 0.0348792076,
+                        "theta": -0.0810224414
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.971544266,
+                        "y": 0.000702858,
+                        "theta": -0.147355735
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 1.26661491,
+                        "y": -0.053150177,
+                        "theta": -0.213689029
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 1.56168556,
+                        "y": -0.107003212,
+                        "theta": -0.147355735
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 1.85967731,
+                        "y": -0.141179562,
+                        "theta": -0.0810224414
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 2.15927887,
+                        "y": -0.155528069,
+                        "theta": -0.0146891437
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 2.4591732,
+                        "y": -0.149986267,
+                        "theta": 0.0516441502
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 2.75803947,
+                        "y": -0.124578,
+                        "theta": 0.117977448
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 3.05595398,
+                        "y": -0.089266777,
+                        "theta": 0.117977448
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 3.35386848,
+                        "y": -0.053955555,
+                        "theta": 0.117977448
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 3.79737,
+                        "y": 0.0211372375,
+                        "theta": 0.217477143
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 3.79737,
+                        "y": 0.0211372375,
+                        "theta": 0.217477143
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 3.36352253,
+                        "y": -0.0976395607,
+                        "theta": 0.316976845
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 2.94361877,
+                        "y": -0.258925438,
+                        "theta": 0.416476548
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 2.54181385,
+                        "y": -0.461124897,
+                        "theta": 0.51597625
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 2.16208076,
+                        "y": -0.702238083,
+                        "theta": 0.615475953
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 1.80817795,
+                        "y": -0.979879379,
+                        "theta": 0.714975655
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 1.48360538,
+                        "y": -1.29130268,
+                        "theta": 0.814475358
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 1.19157314,
+                        "y": -1.63342714,
+                        "theta": 0.91397506
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.934970856,
+                        "y": -2.00286865,
+                        "theta": 1.01347482
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.716335297,
+                        "y": -2.39597321,
+                        "theta": 1.11297452
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.592756271,
+                        "y": -2.66927719,
+                        "theta": 1.17930782
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.487565041,
+                        "y": -2.95017147,
+                        "theta": 1.24564111
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.401224136,
+                        "y": -3.23742104,
+                        "theta": 1.31197441
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.334112167,
+                        "y": -3.52976131,
+                        "theta": 1.3783077
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.286525726,
+                        "y": -3.82590771,
+                        "theta": 1.44464099
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.258674622,
+                        "y": -4.12455654,
+                        "theta": 1.51097429
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.25067997,
+                        "y": -4.42439556,
+                        "theta": 1.57730758
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.251656532,
+                        "y": -4.57439232,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.252633095,
+                        "y": -4.72438908,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.253610611,
+                        "y": -4.87438583,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.254587173,
+                        "y": -5.02438259,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.255563736,
+                        "y": -5.17437935,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.256540298,
+                        "y": -5.32437611,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.257516861,
+                        "y": -5.47437286,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.258493423,
+                        "y": -5.62436962,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.25947,
+                        "y": -5.77436638,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.260446548,
+                        "y": -5.92436409,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.261423111,
+                        "y": -6.07436,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.262399673,
+                        "y": -6.2243576,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.263376236,
+                        "y": -6.37435436,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.264352798,
+                        "y": -6.52435112,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.265330315,
+                        "y": -6.67434788,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.266306877,
+                        "y": -6.82434464,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.26728344,
+                        "y": -6.97434139,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.26826,
+                        "y": -7.12433815,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.269236565,
+                        "y": -7.27433491,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.270213127,
+                        "y": -7.42433167,
+                        "theta": 1.57730746
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                }
+            ]
+        },
+
+
+        {
+            "tmq_header": {
+                "tmq_stamp": "1700033891984"
+            },
+            "timestamp": "1700033891984306585",
+            "trajectory_type": "kTrajectory",
+            "waypoints": [
+                {
+                    "pose": {
+                        "x": 0,
+                        "y": 0,
+                        "theta": 0
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.299951553,
+                        "y": 0.00458145142,
+                        "theta": 0.0305469669
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.599288,
+                        "y": 0.0236787796,
+                        "theta": 0.0968802646
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 0.89862442,
+                        "y": 0.0427761078,
+                        "theta": 0.0305469669
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 1.19857788,
+                        "y": 0.0473566055,
+                        "theta": -1.74845553e-07
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 1.49857807,
+                        "y": 0.0473566055,
+                        "theta": -1.74845553e-07
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 1.79857826,
+                        "y": 0.0473566055,
+                        "theta": -1.74845553e-07
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 2.09857845,
+                        "y": 0.0473566055,
+                        "theta": -1.74845553e-07
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 2.54857826,
+                        "y": 0.0473566055,
+                        "theta": -1.74845553e-07
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 2.99783754,
+                        "y": 0.0697250366,
+                        "theta": 0.0995000079
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 3.44264984,
+                        "y": 0.136610031,
+                        "theta": 0.198999703
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 3.87861824,
+                        "y": 0.247350693,
+                        "theta": 0.298499405
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 4.30142975,
+                        "y": 0.400850296,
+                        "theta": 0.397999108
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 4.7069025,
+                        "y": 0.595591545,
+                        "theta": 0.49749881
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 5.0910244,
+                        "y": 0.829647064,
+                        "theta": 0.596998513
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 5.44999695,
+                        "y": 1.10070229,
+                        "theta": 0.696498215
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 5.78026772,
+                        "y": 1.40607548,
+                        "theta": 0.795997918
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 6.0875988,
+                        "y": 1.73472786,
+                        "theta": 0.841818631
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 6.37016964,
+                        "y": 2.08471107,
+                        "theta": 0.94131881
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 6.61657524,
+                        "y": 2.46103,
+                        "theta": 1.04081857
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 6.82438087,
+                        "y": 2.85996437,
+                        "theta": 1.14031827
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 7.01216793,
+                        "y": 3.26890945,
+                        "theta": 1.14031827
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 7.17931747,
+                        "y": 3.6865139,
+                        "theta": 1.23981798
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 7.30415726,
+                        "y": 4.11865616,
+                        "theta": 1.33931768
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 7.38261223,
+                        "y": 4.4081583,
+                        "theta": 1.27298439
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 7.46106815,
+                        "y": 4.69766092,
+                        "theta": 1.33931768
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 7.52016163,
+                        "y": 4.99172735,
+                        "theta": 1.40565097
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": 7.55963326,
+                        "y": 5.28906393,
+                        "theta": 1.47198427
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                }
+            ]
+        },
+
+
+        {
+            "tmq_header": {
+                "tmq_stamp": "1700033918053"
+            },
+            "timestamp": "1700033918052962515",
+            "trajectory_type": "kTrajectory",
+            "waypoints": [
+                {
+                    "pose": {
+                        "x": -9.64540195,
+                        "y": 83.862381,
+                        "theta": 3.13650298
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -10.3125095,
+                        "y": 83.9122162,
+                        "theta": 2.99757504
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -10.6100149,
+                        "y": 83.9507294,
+                        "theta": 3.02812219
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -10.9089928,
+                        "y": 83.9747925,
+                        "theta": 3.09445548
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -10.9089928,
+                        "y": 83.9747925,
+                        "theta": 3.09445548
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -10.6090775,
+                        "y": 83.9706,
+                        "theta": -3.12239647
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -10.3095436,
+                        "y": 83.9863,
+                        "theta": -3.05606318
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -10.0117092,
+                        "y": 84.0218201,
+                        "theta": -2.98973
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -9.71688366,
+                        "y": 84.0769958,
+                        "theta": -2.92339659
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -9.28312,
+                        "y": 84.1960907,
+                        "theta": -2.82389665
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -8.86333179,
+                        "y": 84.3576813,
+                        "theta": -2.72439671
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -8.45192909,
+                        "y": 84.5400162,
+                        "theta": -2.72439671
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -8.05026913,
+                        "y": 84.7425079,
+                        "theta": -2.62489676
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -7.67070961,
+                        "y": 84.9838943,
+                        "theta": -2.52539682
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -7.31700516,
+                        "y": 85.2617874,
+                        "theta": -2.42589688
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -6.99265575,
+                        "y": 85.5734482,
+                        "theta": -2.32639694
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -6.70086956,
+                        "y": 85.9157867,
+                        "theta": -2.226897
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -6.42635536,
+                        "y": 86.2723541,
+                        "theta": -2.226897
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -6.13456917,
+                        "y": 86.6146851,
+                        "theta": -2.32639694
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -5.81022072,
+                        "y": 86.92634580000001,
+                        "theta": -2.42589688
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -5.57746887,
+                        "y": 87.1155396,
+                        "theta": -2.49223018
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -5.33268929,
+                        "y": 87.288887,
+                        "theta": -2.55856347
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -5.07695675,
+                        "y": 87.4456329,
+                        "theta": -2.62489676
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -4.81139755,
+                        "y": 87.5850754,
+                        "theta": -2.69123
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -4.53717899,
+                        "y": 87.7066116,
+                        "theta": -2.75756335
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -4.25550842,
+                        "y": 87.8097076,
+                        "theta": -2.82389665
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -3.96762371,
+                        "y": 87.8939056,
+                        "theta": -2.89023
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -3.67479038,
+                        "y": 87.9588318,
+                        "theta": -2.95656323
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -3.67479038,
+                        "y": 87.9588318,
+                        "theta": -2.95656323
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -3.97128296,
+                        "y": 87.9134521,
+                        "theta": -3.02289653
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -4.27013206,
+                        "y": 87.8878326,
+                        "theta": -3.08922982
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                }
+            ]
+        },
+
+
+        {
+            "tmq_header": {
+                "tmq_stamp": "1700033941071"
+            },
+            "timestamp": "1700033941070943422",
+            "trajectory_type": "kTrajectory",
+            "waypoints": [
+                {
+                    "pose": {
+                        "x": -9.66813,
+                        "y": 83.8642197,
+                        "theta": 3.13692594
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -10.3125095,
+                        "y": 83.9122162,
+                        "theta": 2.99757504
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -10.6100149,
+                        "y": 83.9507294,
+                        "theta": 3.02812219
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -10.9089928,
+                        "y": 83.9747925,
+                        "theta": 3.09445548
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -10.9089928,
+                        "y": 83.9747925,
+                        "theta": 3.09445548
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -10.6090775,
+                        "y": 83.9706,
+                        "theta": -3.12239647
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -10.3095436,
+                        "y": 83.9863,
+                        "theta": -3.05606318
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -10.0117092,
+                        "y": 84.0218201,
+                        "theta": -2.98973
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -9.71688366,
+                        "y": 84.0769958,
+                        "theta": -2.92339659
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -9.28312,
+                        "y": 84.1960907,
+                        "theta": -2.82389665
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -8.86333179,
+                        "y": 84.3576813,
+                        "theta": -2.72439671
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -8.45192909,
+                        "y": 84.5400162,
+                        "theta": -2.72439671
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -8.05026913,
+                        "y": 84.7425079,
+                        "theta": -2.62489676
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -7.67070961,
+                        "y": 84.9838943,
+                        "theta": -2.52539682
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -7.31700516,
+                        "y": 85.2617874,
+                        "theta": -2.42589688
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -6.99265575,
+                        "y": 85.5734482,
+                        "theta": -2.32639694
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -6.70086956,
+                        "y": 85.9157867,
+                        "theta": -2.226897
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -6.42635536,
+                        "y": 86.2723541,
+                        "theta": -2.226897
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -6.13456917,
+                        "y": 86.6146851,
+                        "theta": -2.32639694
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -5.81022072,
+                        "y": 86.92634580000001,
+                        "theta": -2.42589688
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -5.57746887,
+                        "y": 87.1155396,
+                        "theta": -2.49223018
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -5.33268929,
+                        "y": 87.288887,
+                        "theta": -2.55856347
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -5.07695675,
+                        "y": 87.4456329,
+                        "theta": -2.62489676
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -4.81139755,
+                        "y": 87.5850754,
+                        "theta": -2.69123
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -4.53717899,
+                        "y": 87.7066116,
+                        "theta": -2.75756335
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -4.25550842,
+                        "y": 87.8097076,
+                        "theta": -2.82389665
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -3.96762371,
+                        "y": 87.8939056,
+                        "theta": -2.89023
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -3.67479038,
+                        "y": 87.9588318,
+                        "theta": -2.95656323
+                    },
+                    "direction": "kBackward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -3.67479038,
+                        "y": 87.9588318,
+                        "theta": -2.95656323
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -3.97128296,
+                        "y": 87.9134521,
+                        "theta": -3.02289653
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                },
+                {
+                    "pose": {
+                        "x": -4.27013206,
+                        "y": 87.8878326,
+                        "theta": -3.08922982
+                    },
+                    "direction": "kForward",
+                    "speed": 0.5
+                }
+            ]
+        }
+    ]
+}

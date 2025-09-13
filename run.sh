@@ -1,0 +1,1 @@
+ docker run -d --name fzhu_cpp --env LANG=C.UTF-8 -p 3306:3306 -v  D:\code\cpp_practice\:/code/cpp_practice -it fzhu_cpp_env:v1.0 bash

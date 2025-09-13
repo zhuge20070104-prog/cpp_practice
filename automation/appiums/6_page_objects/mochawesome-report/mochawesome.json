@@ -1,0 +1,141 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-02-07T02:42:22.214Z",
+    "end": "2024-02-07T02:42:31.302Z",
+    "duration": 9088,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "eb479b8f-be06-4e2a-8fee-5c564d02446e",
+      "title": "",
+      "fullFile": "/home/fredric/code/cpp_practice/automation/appiums/6_page_objects/src/test_scripts/account/TC_001_Login.js",
+      "file": "/src/test_scripts/account/TC_001_Login.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "571ab811-daea-4006-9ef5-75c5e547b829",
+          "title": "Learning WebdriverIO API",
+          "fullFile": "/home/fredric/code/cpp_practice/automation/appiums/6_page_objects/src/test_scripts/account/TC_001_Login.js",
+          "file": "/src/test_scripts/account/TC_001_Login.js",
+          "beforeHooks": [],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Learning WebdriverIO API\"",
+              "fullTitle": "Learning WebdriverIO API \"after all\" hook in \"Learning WebdriverIO API\"",
+              "timedOut": false,
+              "duration": 1450,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await releaseResource(driver)",
+              "err": {},
+              "uuid": "cda2ed56-df09-44a8-905d-c0b5ca3cdea4",
+              "parentUUID": "571ab811-daea-4006-9ef5-75c5e547b829",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook in \"Learning WebdriverIO API\"",
+              "fullTitle": "Learning WebdriverIO API \"after each\" hook in \"Learning WebdriverIO API\"",
+              "timedOut": false,
+              "duration": 320,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await releaseEach(this, driver, './screenshot/login.png')",
+              "err": {},
+              "uuid": "a09f8444-2e38-4761-be75-0e59eeef0074",
+              "parentUUID": "571ab811-daea-4006-9ef5-75c5e547b829",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should click on Login Icon successfully",
+              "fullTitle": "Learning WebdriverIO API should click on Login Icon successfully",
+              "timedOut": false,
+              "duration": 7315,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  \"Go to home page successfully\",\n  \"Go to login page successfully\",\n  \"Login\",\n  \"./screenshot/login.png\"\n]",
+              "code": "let login = new Login()\nawait login.is_on_home_page()\naddContext(this, 'Go to home page successfully')\nawait login.go_to_login_page()\naddContext(this, 'Go to login page successfully')\nawait login.login()\naddContext(this, 'Login')\nawait login.is_login_successful()\naddContext(this, 'Login successfully')",
+              "err": {
+                "message": "AssertionError: expected 'You are logged in!' to equal 'You are logged in!!'",
+                "estack": "AssertionError: expected 'You are logged in!' to equal 'You are logged in!!'\n    at Login.is_login_successful (file:///home/fredric/code/cpp_practice/automation/appiums/6_page_objects/src/page_objects/account/Login.js:32:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/fredric/code/cpp_practice/automation/appiums/6_page_objects/src/test_scripts/account/TC_001_Login.js:21:7)",
+                "diff": "- You are logged in!\n+ You are logged in!!\n"
+              },
+              "uuid": "46a5279d-7832-4c7b-8273-f738a8f99f25",
+              "parentUUID": "571ab811-daea-4006-9ef5-75c5e547b829",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "46a5279d-7832-4c7b-8273-f738a8f99f25"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7315,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

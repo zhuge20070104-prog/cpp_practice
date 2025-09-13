@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>color_client.js</file>
+        <file>colors.json</file>
+        <file>Button.qml</file>
+        <file>StatusLabel.qml</file>
+    </qresource>
+</RCC>

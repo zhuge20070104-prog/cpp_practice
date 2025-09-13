@@ -1,0 +1,114 @@
+# 1. 使交互式的Globs更加有用
+# 以 IMG或者DSC开头，不以 CRW或者NEF结尾
+ls ./files/@(IMG|DSC)*!(.CRW|.NEF)
+
+# 2. 使if语句更有用
+for file in `ls ./files/`; do
+    if [[ $file =  @(IMG|DSC)* ]]; then
+        echo $file
+    fi
+done
+
+# 3. 使case语句更加有用
+# ;;& 是Fallthrough的意思
+#!/bin/bash
+
+ALLRAW=0
+NIKRAW=0
+NIKSUP=0
+CANRAW=0
+CANSUP=0
+CANJPG=0
+OTHER=0
+shopt -s extglob
+for file in `ls ./files/`; do
+    case "$file" in 
+        @(IMG|DSC)*@(@(.CR2|.NEF).xmp|.NEF|.CR2)) (( ALLRAW++ ))
+            ;;& 
+        DSC*@(.NEF|.NEF.xmp))  (( NIKRAW++ )) 
+            ;;&
+        DSC*@(.NEF.xmp))  (( NIKSUP++ )) 
+            ;;
+        IMG*@(.CR2|.CR2.xmp))  (( CANRAW++ ))
+            ;;& 
+        IMG*@(.CR2.xmp))      (( CANSUP++ )) 
+            ;;
+        IMG*@(.JPG|.jpg))      (( CANJPG++ ))
+            ;;
+        *)                    ((  OTHER++  )) ;;
+    esac
+done
+
+echo "ALLRAW: ${ALLRAW}"
+echo "NIKRAW: ${NIKRAW}"
+echo "NIKSUP: ${NIKSUP}"
+echo "CANRAW: ${CANRAW}"
+echo "CANSUP: ${CANSUP}"
+echo "CANJPG: ${CANJPG}"
+echo "OTHER: ${OTHER}"
+
+# 4. Pattern抽取
+file=Archive-2024-03-07.tar.gz
+echo ${file%.*}
+# Archive-2024-03-07.tar
+echo ${file%%.*}
+# Archive-2024-03-07
+
+# 一个百分号和两个百分号， 一个百分号match 最近的.
+# 两个%% match 最远的点，到时候要试一下
+
+
+# 直接输出文件名
+file=Archive-2024-03-07.tar.gz
+echo ${file%%@(.tar|.bak)*}
+# 输出Archive-2024-03-07
+
+
+# Speed, 性能问题，大量文件时，例如10000个文件，
+# 我们的extended glob 比 Regular Expression 快
+# Extended glob if
+
+#!/bin/bash 
+
+echo  "" > ./result_extended_if.txt
+for file in `ls ./tars/`; do
+    if [[ $file = Backup*.@(@(tar|arc).gz|tgz) ]]; then 
+        echo $file >> ./result_extended_if.txt
+    fi
+done
+
+
+# Extended glob for case
+#!/bin/bash
+
+echo  "" > ./result_extended_case.txt
+for file in `ls ./tars/`; do
+    case $file in
+        Backup*.@(@(tar|arc).gz|tgz))  
+            echo $file >> ./result_extended_case.txt ;;
+    esac
+    fi
+done
+
+# For extended globs
+#!/bin/bash 
+
+echo  "" > ./result_extended_glob.txt
+shopt -s extglob
+for file in  ./tars/Backup*.@(@(tar|arc).gz|tgz); do
+    echo $file >> ./result_extended_glob.txt
+done
+
+# Regular expression if
+#!/bin/bash 
+
+echo  "" > ./result_regular_if.txt
+for file in `ls ./tars/`; do
+    if [[ $file =~ Backup.*\.((tar|arc).gz|tgz) ]]; then 
+        echo $file >> ./result_regular_if.txt
+    fi
+done
+
+
+
+

@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Home.qml</file>
+        <file>Profile.qml</file>
+        <file>EditProfile.qml</file>
+        <file>About.qml</file>
+    </qresource>
+</RCC>

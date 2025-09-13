@@ -1,0 +1,11 @@
+{
+    "debug": {
+        "file_name": "debug.log",
+        "level": "3",
+        "modules": [
+            "财务",
+            "管理员",
+            "人力资源"
+        ]
+    }
+}

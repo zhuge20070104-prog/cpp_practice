@@ -1,0 +1,8 @@
+Module,Total,Pass,Fail,Pass Rate
+diagnostic,1,0,1,0.0
+euim,23,5,18,21.74
+lam,33,14,19,42.42
+planning,1501,1309,192,87.21
+strategy,39,26,13,66.67
+spm,7,1,6,14.29
+vehicle_control,2,2,0,100.0

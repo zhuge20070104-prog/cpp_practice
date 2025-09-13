@@ -1,0 +1,24 @@
+# 匹配一个
+ls ./files/photo@(.jpg)
+
+# 匹配多个
+ls ./files/photo@(.jpg|.png)
+
+# ? match 0次或1次
+ls ./files/photo?(.jpg|.png)
+
+
+# + match 1次或多次
+ls ./files/photo+(.jpg|.png)
+
+# * match 0次或多次
+ls ./files/photo*(.jpg|.png)
+
+# ! 取反
+ls ./files/photo!(.jpg|.png)
+
+# ? 取反，?是0次或1次
+ls ./files/photo!(?(.jpg|.png))
+
+# 不能以file/photo开头，不能以jpg或gif结尾
+ls ./files/!(+(photo|file)*+(.jpg|.gif))

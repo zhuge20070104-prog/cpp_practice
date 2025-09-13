@@ -1,0 +1,6 @@
+[requires]
+ opencv/4.5.5
+ boost/1.78.0
+
+[generators]
+cmake

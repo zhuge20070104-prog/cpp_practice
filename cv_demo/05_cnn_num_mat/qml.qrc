@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>PaintItem.qml</file>
+        <file>ValueDialog.qml</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>process.svg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,6 @@
+[submodule "cmake_tutorial/3_git_sub_module/external/glfw"]
+	path = cmake_tutorial/3_git_sub_module/external/glfw
+	url = https://github.com/glfw/glfw.git
+[submodule "cmake_tutorial/3_git_sub_module_cmake/external/glfw"]
+	path = cmake_tutorial/3_git_sub_module_cmake/external/glfw
+	url = https://github.com/glfw/glfw.git

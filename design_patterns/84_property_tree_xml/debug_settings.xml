@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<debug>
+    <file_name>debug.log</file_name>
+    <level>2</level>
+    <modules>
+        <module>财务</module>
+        <module>管理员</module>
+        <module>人力资源</module>
+    </modules>
+</debug>

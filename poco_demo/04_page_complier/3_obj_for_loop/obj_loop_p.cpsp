@@ -1,0 +1,24 @@
+<%@ page class="ObjLoopHandler" %>
+<%!
+    #include <string>
+    #include <vector>
+%>
+
+<%
+    struct Person {
+        std::string name;
+        int age;
+    };
+    std::vector<Person> persons {{"ZhangSan", 18}, {"Lisi", 22}, {"WangWu", 33}, {"ZhaoLiu", 34}};
+%>
+<html>
+<head>
+<title>ObjLoopHandler powered by POCO C++ Libraries and PageCompiler</title>
+<meta http-equiv="refresh" content="1">
+</head>
+<body>
+<% for(auto const& person: persons) { %>
+<p style="text-align: center; font-size: 48px;"><%= person.name %> &nbsp;&nbsp; <%=person.age%></p>
+<% } %>
+</body>
+</html>

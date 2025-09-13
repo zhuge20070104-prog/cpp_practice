@@ -1,0 +1,1 @@
+docker run -d -it --name fzhu_jupyter -p 8888:8888 -v D:\code\cpp_practice\simple_learn:/tf tensorflow/tensorflow:2.5.1-jupyter

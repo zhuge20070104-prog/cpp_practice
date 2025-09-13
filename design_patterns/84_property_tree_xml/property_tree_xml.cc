@@ -1,0 +1,38 @@
+#include "property_tree_xml.h"
+#include <boost/property_tree/ptree.hpp>
+#include <boost/property_tree/xml_parser.hpp>
+#include <exception>
+
+namespace pt = boost::property_tree;
+using ptree = boost::property_tree::ptree;
+using ptree_value_type = ptree::value_type;
+
+namespace client {
+    debug_settings::debug_settings(std::string const& file_name):
+        m_file_name(file_name) {}
+    
+    void debug_settings::load() {
+        ptree tree;
+        pt::read_xml(m_file_name, tree);
+        m_file = tree.get<std::string>("debug.file_name");
+        m_level = tree.get("debug.level", 0);
+        auto modules = tree.get_child("debug.modules");
+        std::for_each(modules.begin(), modules.end(), [&](ptree_value_type const& v) {
+            m_modules.push_back(v.second.data());
+        });
+    }
+
+    void debug_settings::save() {
+        ptree tree;
+        tree.put("debug.file_name", m_file);
+        tree.put("debug.level", m_level);
+
+        ptree modules; 
+        std::for_each(m_modules.begin(), m_modules.end(), [&modules](std::string const& module) {
+            modules.push_back(ptree_value_type{"module", module});
+        });
+        tree.add_child("debug.modules", modules);
+        auto settings = pt::xml_writer_make_settings<std::string> (' ', 4);
+        pt::write_xml(m_file_name, tree, std::locale(), settings);
+    }
+};
