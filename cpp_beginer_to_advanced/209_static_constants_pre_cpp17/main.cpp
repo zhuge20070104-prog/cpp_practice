@@ -11,9 +11,14 @@
  */
 
 
+ class Test {
+    const double pi {3.1415};
+ };
+
+
 int main(int argc, char* argv[]) {
 
-
+    
     return EXIT_SUCCESS;
 }
 
