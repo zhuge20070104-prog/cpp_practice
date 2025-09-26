@@ -4,13 +4,13 @@
 
 void pass_by_value(std::shared_ptr<Dog> dog) {
     std::cout << "Inside function by value: " << dog->get_name() << '\n';
-    std::cout << "Count in function: " << dog->use_count() << '\n';
+    std::cout << "Count in function: " << dog.use_count() << '\n';
 }
 
 void pass_by_non_const_ref(std::shared_ptr<Dog>& dog) {
     dog->set_name("main_dog_changed");
     std::cout << "Inside function non const ref: " << dog->get_name() << '\n';
-    std::cout << "Count in function: " << dog->use_count() << '\n';
+    std::cout << "Count in function: " << dog.use_count() << '\n';
 }
 
 void pass_by_const_ref(const std::shared_ptr<Dog>& dog) {
