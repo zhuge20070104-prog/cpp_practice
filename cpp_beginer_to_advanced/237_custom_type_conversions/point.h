@@ -103,6 +103,42 @@ private:
     int* point_data{nullptr};
 };
 
-// TODO: finish Point's inline functions
+// non member accessing private members of Point - friend of the Point class
+// using inline to constrain the definition to this TU only
+inline Point operator+(const Point& left, const Point& right) {
+    Point p(left);
+    return p += right;
+}
+
+inline Point operator-(const Point& left, const Point& right) {
+    Point p {left};
+    return p -= right;
+}
+
+inline Point& operator+=(const Point& left, const Point& right) {
+    left.m_x += right.m_x;
+    left.m_y += right.m_y;
+    return left;
+}
+
+inline Point& operator-=(const Point& left, const Point& right) {
+    left.m_x -= right.m_x;
+    left.m_y -= right.m_y;
+    return left;
+}
+
+inline std::ostream& operator<<(std::ostream& os, const Point& p) {
+    os << "Point: [" << p.m_x << ", " << p.m_y << ", " << *(p.point_data) << "]";
+    return os;
+} 
+
+inline std::istream& operator>>(std::istream& is, Point& p) {
+    std::cout << "Enter the x coordinate: ";
+    is >> p.m_x;
+    std::cout << "Enter the y coordinate: ";
+    is >> p.m_y;
+
+    return is;
+}
 
 #endif
