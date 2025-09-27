@@ -115,13 +115,13 @@ inline Point operator-(const Point& left, const Point& right) {
     return p -= right;
 }
 
-inline Point& operator+=(const Point& left, const Point& right) {
+inline Point& operator+=(Point& left, const Point& right) {
     left.m_x += right.m_x;
     left.m_y += right.m_y;
     return left;
 }
 
-inline Point& operator-=(const Point& left, const Point& right) {
+inline Point& operator-=(Point& left, const Point& right) {
     left.m_x -= right.m_x;
     left.m_y -= right.m_y;
     return left;
