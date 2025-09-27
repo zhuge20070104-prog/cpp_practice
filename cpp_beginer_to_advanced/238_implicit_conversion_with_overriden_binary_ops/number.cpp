@@ -1,4 +1,6 @@
+#include <iostream>
 #include "number.h"
+
 
 Number::Number(int value): m_wrappered_int{value} {}
 
