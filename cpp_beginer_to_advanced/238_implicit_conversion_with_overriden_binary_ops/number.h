@@ -5,8 +5,8 @@
 
 class Number {
     friend std::ostream& operator<<(std::ostream& out, const Number& number); 
-    friend Number operator+(const Number& left, const Number& right);
-    friend Number operator-(const Number& left, const Number& right);
+    // friend Number operator+(const Number& left, const Number& right);
+    // friend Number operator-(const Number& left, const Number& right);
     friend Number operator*(const Number& left, const Number& right);
     friend Number operator/(const Number& left, const Number& right);
     friend Number operator%(const Number& left, const Number& right);
@@ -20,9 +20,14 @@ public:
     }
 
     ~Number() {}
-    // Number operator+(const Number& right) {
-    //     return {m_wrappered_int + right.m_wrappered_int};
-    // }
+    Number operator+(const Number& right) {
+        return {m_wrappered_int + right.m_wrappered_int};
+    }
+
+    Number operator-(const Number& right) {
+        return {m_wrappered_int - right.m_wrappered_int};
+    }
+
     operator double() const {
         std::cout << "Using the member double() to convert\n";
         return static_cast<double>(m_wrappered_int);
