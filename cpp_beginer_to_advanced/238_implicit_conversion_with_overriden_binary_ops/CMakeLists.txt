@@ -6,9 +6,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(237_custom_type_conversions main.cpp
-    car.cpp
-    number.cpp
-    point.cpp)
+    number.cpp)
 
 
 include(GNUInstallDirs)
