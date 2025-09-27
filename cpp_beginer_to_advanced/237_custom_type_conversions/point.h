@@ -9,6 +9,7 @@ class Car;
 
 
 class Point {
+public:
     Point() = default;
 
     Point(double x, double y, int data);
