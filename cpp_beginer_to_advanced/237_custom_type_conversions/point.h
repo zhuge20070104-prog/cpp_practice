@@ -26,7 +26,7 @@ class Point {
 
     Point operator+(const Point& right) const {
         std::cout << "Member operator + called!\n";
-        return Point{m_x + right.m_x, m_y + right.m_y};
+        return Point{m_x + right.m_x, m_y + right.m_y, 0};
     }
 
     // << as a member function
