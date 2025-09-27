@@ -13,9 +13,9 @@ Point::~Point() {
 
 
 Point::Point(const& Number num):
-    Point{static_cast<double>(num.get_wrappered_int()),
+    Point(static_cast<double>(num.get_wrappered_int()),
           static_cast<double>(num.get_wrappered_int()),
-          0} {
+          0) {
     std::cout << "Using the Point constructor to convert\n";
 }
 
