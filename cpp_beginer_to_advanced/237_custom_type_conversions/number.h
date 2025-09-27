@@ -30,7 +30,9 @@ public:
 
     operator Point() const {
         std::cout << "Using the member Point() to convert\n";
-        return Point{m_wrappered_int, m_wrappered_int, m_wrappered_int};
+        return Point{static_cast<double>(m_wrappered_int),
+             static_cast<double>(m_wrappered_int),
+             m_wrappered_int};
     }
 private:
     int m_wrappered_int{};
