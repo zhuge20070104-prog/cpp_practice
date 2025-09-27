@@ -64,7 +64,7 @@ class Point {
     friend Point operator*(const Point& left, const Point& right);
     friend Point operator/(const Point& left, const Point& right);
     friend Point& operator+=(Point& left, const Point& right);
-    friend Point& operator-=(Point& left, const Point& right)
+    friend Point& operator-=(Point& left, const Point& right);
 
     friend std::ostream& operator<<(std::ostream& out, const Point& p);
     friend std::istream& operator>>(std::istream& is, Point& p);
