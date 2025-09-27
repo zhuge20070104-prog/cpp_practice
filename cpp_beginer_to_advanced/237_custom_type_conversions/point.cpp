@@ -12,7 +12,7 @@ Point::~Point() {
 }
 
 
-Point::Point(const& Number num):
+Point::Point(const Number& num):
     Point(static_cast<double>(num.get_wrappered_int()),
           static_cast<double>(num.get_wrappered_int()),
           0) {
