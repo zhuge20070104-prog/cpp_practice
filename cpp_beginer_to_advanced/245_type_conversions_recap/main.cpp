@@ -1,6 +1,7 @@
 #include <iostream>
 #include "point.h"
 #include "car.h"
+#include "number.h"
 
 void do_something(const Point& p) {
     std::cout << "from_func: " << p << '\n';
