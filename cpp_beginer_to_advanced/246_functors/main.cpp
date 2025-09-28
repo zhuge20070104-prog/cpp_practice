@@ -12,8 +12,8 @@ public:
 };
 
 
-void do_something(Printer& printer) {
-    printer("Draper");
+void do_something(Print& print) {
+    print("Draper");
 }
 
 
