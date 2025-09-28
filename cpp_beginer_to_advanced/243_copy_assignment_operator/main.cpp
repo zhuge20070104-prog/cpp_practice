@@ -17,7 +17,7 @@ int main(int argc, char* argv[]) {
     std::cout << "p3: " << p3 << '\n';
 
 
-    p1.operator=(p2).operator=(Point{0, 0, 0});
+    p1.operator=((p2).operator=(Point{0, 0, 0}));
 
     std::cout << "p1: " << p1 << '\n';
 
