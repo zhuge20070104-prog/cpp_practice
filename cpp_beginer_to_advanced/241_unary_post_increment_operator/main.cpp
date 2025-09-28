@@ -4,7 +4,7 @@
 
 int main(int argc, char* argv[]) {
 
-    Point p1 {8, 5};
+    Point p1 {8, 5, 0};
 
     std::cout << "p1: " << p1 << '\n';
     std::cout << "p1++: " << p1++ << '\n';
