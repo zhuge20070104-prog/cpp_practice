@@ -5,8 +5,8 @@
 
 
 int main(int argc, char* argv[]) {
-    Point p1 {1, 1};
-    Point p2 {2, 2};
+    Point p1 {1, 1, 0};
+    Point p2 {2, 2, 0};
     
     auto p3 { operator+(p1, p2) };
     auto p4 { p2 + p3 };
