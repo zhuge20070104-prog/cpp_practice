@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
     Point p3 = p2;
     std::cout << "p3: " << p3 << '\n';
 
-
+    // 需要加括号，这里才能工作
     p1.operator=((p2).operator=(Point{0, 0, 0}));
 
     std::cout << "p1: " << p1 << '\n';
