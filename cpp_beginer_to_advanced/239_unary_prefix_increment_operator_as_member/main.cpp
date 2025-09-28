@@ -5,7 +5,7 @@
 
 int main(int argc, char* argv[]) {
 
-    Point p1 {2.1, -6.8};
+    Point p1 {2.1, -6.8, 0};
     
 
     std::cout << "p1: " << p1 << '\n';
@@ -18,6 +18,6 @@ int main(int argc, char* argv[]) {
         ++p1;
         std::cout << "p1: " << p1 << '\n';
     }
-    
+
     return EXIT_SUCCESS;
 }
