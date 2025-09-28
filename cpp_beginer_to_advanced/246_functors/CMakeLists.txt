@@ -5,10 +5,7 @@ project(246_functors LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(246_functors main.cpp
-    car.cpp
-    number.cpp
-    point.cpp)
+add_executable(246_functors main.cpp)
 
 
 include(GNUInstallDirs)
