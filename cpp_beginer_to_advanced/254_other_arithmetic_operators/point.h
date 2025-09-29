@@ -26,6 +26,7 @@ public:
     }
 
     friend Point operator+(const Point& left, const Point& right);
+    friend Point operator-(const Point& left, const Point& right);
 
     // << as a member function
     // left operand will be the point class and right will be the ostream class - awkward
@@ -103,6 +104,11 @@ private:
 inline Point operator+(const Point& left, const Point& right) {
     Point p {left};
     return p += right;
+}
+
+inline Point operator-(const Point& left, const Point& right) {
+    Point p {left};
+    return p -= right;
 }
 
 inline Point& operator+=(Point& left, const Point& right) {
