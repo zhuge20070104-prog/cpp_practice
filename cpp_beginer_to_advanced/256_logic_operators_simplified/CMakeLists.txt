@@ -5,7 +5,7 @@ project(256_logic_operators_simplified LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(256_logic_operators_simplified main.cpp)
+add_executable(256_logic_operators_simplified main.cpp number.cpp)
 
 
 include(GNUInstallDirs)
