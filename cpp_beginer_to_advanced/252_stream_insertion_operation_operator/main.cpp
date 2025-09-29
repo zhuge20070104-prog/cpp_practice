@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
     p1 << std::cout;
     
     // intuitive, operator<< as friend of Point, chaining of statements
-    std::cout << "p1: " << p1 << ', ' << p2 << '\n';
+    std::cout << "p1: " << p1 << ", " << p2 << '\n';
 
     return EXIT_SUCCESS;
 }
