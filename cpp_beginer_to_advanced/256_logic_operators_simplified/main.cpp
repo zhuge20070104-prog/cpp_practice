@@ -1,4 +1,5 @@
 #include <iostream>
+#include "number.h"
 
 
 int main(int argc, char* argv[]) {
@@ -27,6 +28,7 @@ int main(int argc, char* argv[]) {
     std::cout << "n1 <= n2: " << (n1 <= n2) << std::endl;
     std::cout << "3 <= n2: " << (3 <= n2) << std::endl;
     std::cout << "n1 <= 3: " << (n1 <= 3) << std::endl;
+
     std::cout << "n1 >= n2: " << (n1 >= n2) << std::endl;
     std::cout << "3 >= n2: " << (3 >= n2) << std::endl;
     std::cout << "n1 >= 3: " << (n1 >= 3) << std::endl;
