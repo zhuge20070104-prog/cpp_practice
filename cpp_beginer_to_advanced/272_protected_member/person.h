@@ -13,8 +13,6 @@ public:
     Person(std::string_view fname, std::string_view lname);
     ~Person() = default;
 
-   
-
 protected:
     std::string m_fname{};
     std::string m_lname{};
