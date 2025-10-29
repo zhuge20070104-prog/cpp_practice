@@ -41,7 +41,7 @@ int main(int argc, char* argv[]) {
     std::ranges::take_while_view view_taken_while {
         std::ranges::take_while_view(vector, [](int n) {
             return n % 2 != 0;
-        }
+        })
     };
 
     print_view(view_taken_while);
