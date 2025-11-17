@@ -1,0 +1,1 @@
+mpirun -np 4 ./bin/20_hello_mpi
