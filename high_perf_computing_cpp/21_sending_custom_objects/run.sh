@@ -1,0 +1,1 @@
+mpirun -np 4 ./bin/21_sending_custom_objects

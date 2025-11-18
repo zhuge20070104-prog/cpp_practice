@@ -1,0 +1,1 @@
+mpirun -np 4 ./bin/22_boost_mpi
