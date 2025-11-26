@@ -4,6 +4,7 @@
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 
 #define gpuErrCheck(ans) { gpuAssert((ans), __FILE__, __LINE__); }
@@ -17,7 +18,7 @@ inline void gpuAssert(cudaError_t code, const char* file, int line, bool abort=t
     }
 }
 
-void compare_results(int* a, int* b, int size) {
+inline void compare_results(int* a, int* b, int size) {
     for(int i=0; i<size; i++) {
         if(a[i] != b[i]) {
             printf("Arrays are different\n");
@@ -28,5 +29,17 @@ void compare_results(int* a, int* b, int size) {
     printf("Arrays are the same\n");
 }
 
+enum INIT_PARAM{
+	INIT_ZERO,INIT_RANDOM,INIT_ONE,INIT_ONE_TO_TEN,INIT_FOR_SPARSE_METRICS,INIT_0_TO_X
+};
 
+
+// Initialize the integer input array
+void initialize(int * input, const int array_size,
+	INIT_PARAM PARAM = INIT_ONE_TO_TEN, int x = 0);
+
+//reduction in cpu
+int reduction_cpu(int * input, const int size);
+
+void compare_results(int gpu_result, int cpu_result);
 #endif
