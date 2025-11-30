@@ -104,25 +104,13 @@ int main(int argc, char** argv) {
     gpuErrCheck(cudaMalloc((void**)&d_input, byte_size));
     gpuErrCheck(cudaMalloc((void**)&d_temp, temp_array_byte_size));
 
-    // 使用 CUDA Events 精确测量 kernel 时间
-    cudaEvent_t start, stop;
-    gpuErrCheck(cudaEventCreate(&start));
-    gpuErrCheck(cudaEventCreate(&stop));
-
     gpu_start = clock();
 
     gpuErrCheck(cudaMemset(d_temp, 0, temp_array_byte_size));
     gpuErrCheck(cudaMemcpy(d_input, h_input, byte_size, cudaMemcpyHostToDevice));
 
-    // 开始计时
-    gpuErrCheck(cudaEventRecord(start, 0));
-    
     // 每个 block 对自己负责的元素做递归动态并行归约
     gpuRecursiveReduce<<<grid, block>>>(d_input, d_temp, block_size);
-    
-    // 结束计时
-    gpuErrCheck(cudaEventRecord(stop, 0));
-    gpuErrCheck(cudaEventSynchronize(stop));
     
     // 检查 CUDA 错误
     cudaError_t err = cudaGetLastError();
@@ -146,15 +134,6 @@ int main(int argc, char** argv) {
     if (non_zero_blocks > 0) {
         printf("Average per non-zero block: %d\n", gpu_result / non_zero_blocks);
     }
-
-    // 获取 kernel 执行时间
-    float kernel_time_ms = 0;
-    gpuErrCheck(cudaEventElapsedTime(&kernel_time_ms, start, stop));
-    printf("Kernel execution time (CUDA Events): %.3f ms\n", kernel_time_ms);
-
-    // 清理 events
-    gpuErrCheck(cudaEventDestroy(start));
-    gpuErrCheck(cudaEventDestroy(stop));
 
     gpu_end = clock();
     print_time_using_host_clock(gpu_start, gpu_end);
