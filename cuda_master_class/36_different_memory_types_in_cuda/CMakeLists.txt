@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.18)
 
 # 设置 CUDA 架构策略（在 project() 之前设置）
 if(NOT DEFINED CMAKE_CUDA_ARCHITECTURES)
-    # RTX 3500 Ada = compute capability 8.9
-    # CUDA 13.0 支持 75, 80, 86, 87, 89, 90 等
-    set(CMAKE_CUDA_ARCHITECTURES 89)
+    # RTX 3500 Ada / L40G = compute capability 8.9
+    # 当前 nvcc 11.5 不支持 sm_89，降级使用 sm_86 (Ampere)，L40G 可兼容运行
+    set(CMAKE_CUDA_ARCHITECTURES 86)
 endif()
 
 # 解决 CUDA 和 GCC 13.x 兼容性问题（仅限 Linux/Unix）
