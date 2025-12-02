@@ -33,6 +33,7 @@ enum INIT_PARAM{
 	INIT_ZERO,INIT_RANDOM,INIT_ONE,INIT_ONE_TO_TEN,INIT_FOR_SPARSE_METRICS,INIT_0_TO_X
 };
 
+void sum_array_cpu(float* a, float* b, float* c, int size);
 
 // Initialize the integer input array
 void initialize(int * input, const int array_size,
