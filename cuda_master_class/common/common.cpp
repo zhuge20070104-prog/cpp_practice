@@ -2,6 +2,7 @@
 #include <time.h>
 #include <stdlib.h>
 #include <stddef.h>
+#include <cmath>
 
 void initialize(int * input, const int array_size,
 	INIT_PARAM PARAM, int x)
