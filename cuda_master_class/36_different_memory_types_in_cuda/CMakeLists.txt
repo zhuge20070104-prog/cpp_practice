@@ -69,6 +69,9 @@ endif()
 include(CheckLanguage)
 check_language(CUDA)
 
+# 强制允许不支持的编译器（绕过旧头文件版本检查）
+set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -allow-unsupported-compiler")
+
 if(CMAKE_CUDA_COMPILER)
     enable_language(CUDA)
     message(STATUS "CUDA 编译器找到: ${CMAKE_CUDA_COMPILER}")
@@ -107,6 +110,7 @@ function(create_cuda_example TARGET_NAME SOURCE_FILE)
         $<$<COMPILE_LANGUAGE:CUDA>:
             --use_fast_math
             --ptxas-options=-v
+            -allow-unsupported-compiler  # 强制允许 GCC 12 编译（绕过旧头文件版本检查）
             $<$<PLATFORM_ID:Windows>:-Xcompiler /wd5045>  # 禁用 Spectre 警告
             $<$<PLATFORM_ID:Linux>:-Xcompiler -Wall>
         >
