@@ -83,19 +83,14 @@ void compare_results(int gpu_result, int cpu_result)
 	printf("GPU and CPU results are different \n");
 }
 
-void compare_results(float gpu_result, float cpu_result) {
-	printf("GPU result : %f , CPU result : %f \n",
-		gpu_result, cpu_result);
-
-	if(fabs(gpu_result - cpu_result) < 1e-6) {
-		printf("GPU and CPU results are same \n");
-		return;
+void compare_results(float* a, float* b, int size) {
+	for(int i=0; i<size; i++) {
+		if(fabs(a[i] - b[i]) > 1e-6) {
+			printf("Arrays are different \n");
+			return;
+		}
 	}
-
-	printf("GPU and CPU results are different \n");
-	printf("GPU result : %f , CPU result : %f \n",
-		gpu_result, cpu_result);
-	printf("Difference : %f \n", fabs(gpu_result - cpu_result));
+	printf("Arrays are the same \n");
 }
 
 void sum_array_cpu(float* a, float* b, float* c, int size) {

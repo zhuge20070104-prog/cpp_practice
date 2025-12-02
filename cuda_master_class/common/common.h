@@ -43,5 +43,5 @@ void initialize(int * input, const int array_size,
 int reduction_cpu(int * input, const int size);
 
 void compare_results(int gpu_result, int cpu_result);
-void compare_results(float gpu_result, float cpu_result);
+void compare_results(float* a, float* b, int size);
 #endif
